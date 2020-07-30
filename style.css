@@ -1,0 +1,547 @@
+body {
+  /* font-family: 'Caveat', cursive; */
+  font-family:'Barlow', sans-serif;
+  margin: 0;
+}
+header {
+  /* background-color:  #228bdc; */
+  background-color: #35484E;
+  color: white;
+  margin: 0 auto;
+  /* width: 700px; */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  }
+
+a {
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+nav a:visited {
+  text-decoration: none;
+  /* color: #3CB1AE; */
+  color: #578F8F;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+}
+h2 {
+   margin-top: 0;
+}
+h4 {
+  font-size: 37px;
+  font-weight:lighter;
+  letter-spacing: -1px;
+}
+h3 {
+  font-size: 37px;
+  font-weight:lighter;
+  letter-spacing: -1px;
+}
+h6 {
+  font-size: 37px;
+  font-weight:normal;
+  letter-spacing: -1px;
+}
+p {
+  font-size: 21px;
+  font-weight:200;
+}
+/* section #skills {
+  background-color: #3d726e; */
+}
+footer {
+  /* display: flex; */
+  flex-direction: row;
+  font-size: 14px;
+  font-weight:lighter;
+  color: white;
+  background-color: #3CB1AE;
+  /* background-color: #905239; */
+}
+i {
+  font-size: large;
+  color: white;
+  padding-right: 3px;
+  width: 7%;
+}
+ul {
+  margin-left: 1vw;
+  padding-left: 0vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+/* i~a {
+  margin: 5px, 5px, 5px, 5px;
+} */
+ul, li, a {
+  text-transform: uppercase;
+  color: white;
+}
+ul, li, a:visited {
+  color: #578F8F;
+}
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection,
+h6::selection, p::selection {
+  background-color: #3CB1AE;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.menu-link1, .menu-link2, .menu-link3, .menu-link4 {
+  margin-left: 10px;
+}
+/* .nav-bar-hover:hover {
+  background-color: #5D6D71;
+} */
+nav a:hover {
+  color: #5D6D71;
+}
+/* .menu-link1:hover {
+  background-color: #5D6D71;
+} */
+.name-title-picture {
+  display: flex;
+  align-items: flex-start;
+}
+.name-title{
+  margin-right: 30px;
+}
+.name-title h2 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+.skills-container {
+  /* background-color:  #35484e; */
+  /* background-color: #3d726e; */
+  /* background-color: #905239; */
+  /* background-color: #35484e; */
+  /* background-color: #3CB1AE; */
+  background-color: #3d726e;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 700px;
+}
+
+.section-titles, .top-name {
+  font-size: 55px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  /* font-family: 'Mitr', sans-serif; */
+  font-family: 'Josefin Slab', serif;
+}
+/* #About p:last-of-type {
+  font-style: italic;
+} */
+.italicized {
+  font-style: italic;
+}
+#About .bold-first-letter::first-line {
+  font-weight: bold;
+  color:	#964653;
+}
+.red-text {
+  color:	#964653;
+}
+.skill-meter {
+  display: flex;
+  align-items: baseline;
+  width: 100%
+}
+.meter-component {
+  /* flex-grow: 2; */
+  width: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.skill-meter p {
+  width: 25%;
+}
+.skill-meter :first-child {
+  font-size: 18px
+}
+meter::-webkit-meter-bar {
+  border-radius: 20px;
+}
+meter::-webkit-meter-optimum-value {
+  background: #e3c4c9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.full-meter::-webkit-meter-optimum-value {
+  border-radius: 20px;
+}
+.job-experience {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.year-title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+}
+.year {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  margin-right: 20px;
+  text-align: right;
+  color:	#964653;
+}
+.title {
+  display: flex;
+  /* flex-grow: 3; */
+    width: 75%;
+  justify-content: flex-start;
+  color: #e3c4c9;
+}
+.year h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+.title p {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+.company-JD {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+width: 100%;
+margin: 20px auto;
+}
+
+.company {
+display: flex;
+/* justify-content: flex-end; */
+/* width: 10vw; */
+width: 25%;
+margin-right: 20px;
+text-align: right;
+}
+
+.JD {
+  display: flex;
+  /* flex-grow: 3; */
+  width: 75%;
+  /* justify-content: flex-start; */
+}
+.company h3 {
+  /* padding: 0;
+  margin: 0; */
+  font-size: 30px;
+  margin: -10px auto 0;
+}
+.JD p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Josefin Slab', serif;
+}
+.footer-links {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* flexgrow: 2; */
+  /* width: 30% */
+  margin-right: 3vw;
+  margin-bottom: 0;
+  align-items: flex-end;
+  width: 20%;
+}
+.footer-anchor {
+  display: flex;
+  margin-top: 5px;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-anchor a:visited {
+  color: #35484E;
+}
+
+.footer-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+  margin-right:1vw;
+  /* width: 40% */
+  width: 20%;
+}
+.footer-name h1 {
+font-size: 34px;
+margin-bottom: 10px;
+}
+.footer-name h4 {
+font-size: 22px;
+margin-top: 10px;
+}
+
+.footer-style {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight:lighter;
+  color: white;
+  margin: 0;
+  /* background-color: #3CB1AE; */
+  background-color: #578F8F
+  /* width: 25%; */
+}
+/* .footer-image {
+  background-image: url("smiling-prairie.JPG");
+  width: 230px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+} */
+.smiling-priarie {
+  display: flex;
+  /* width: 25% */
+  margin-left: 0;
+  justify-content: flex-end;
+}
+
+.footer-image {
+  width: 15%;
+  height: auto;
+}
+
+.footer-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 219px;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    font-size: 15px;
+  }
+  .section-titles {
+    margin-bottom: 15px;
+  }
+  .red-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+  .year h3 {
+    font-size: 16px;
+  }
+  .title p {
+    font-size: 18px;
+}
+  .company h3 {
+    font-size: 18px;
+  }
+  .JD p {
+    font-size: 14px;
+  }
+  .company {
+    display: block;
+  }
+  .year-title {
+    align-items: flex-end;
+  }
+  .footer-style {
+    font-size: 12px;
+  }
+  .footer-links {
+    align-items: center;
+  }
+  /* .footer-links a:nth-of-type(1) {
+     word-break: break-word;
+  } */
+
+@media screen and (max-width: 780px) {
+
+  .skill-meter :first-child {
+    font-size: 15px;
+  }
+  .footer-style {
+    flex-wrap: wrap;
+  }
+
+  .footer-image:nth-of-type(2) {
+    display: none;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer-name {
+    width: 30%;
+  }
+
+  .footer-name h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .name-title-picture {
+    flex-direction: column !important;
+  }
+
+  .name-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center
+  }
+
+  .prairie-picture {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+}
+.footer-anchor:nth-of-type(1) {
+   word-break: break-word;
+}
+@media screen and (max-width: 600px) {
+.section-titles {
+  margin-bottom: 10px;
+}
+.menu {
+  flex-direction: column;
+}
+.red-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+.about p {
+  font-size: 20px;
+}
+.skill-meter :first-child {
+  font-size: 14px;
+}
+
+.footer-style {
+  flex-direction: row-reverse;
+}
+.footer-name {
+  margin-left: 0
+}
+.footer-name h1 {
+  font-size: 24px;
+}
+.footer-name h4 {
+  font-size: 18px;
+}
+  /* .footer-image:nth-of-type(1) {
+    display: none;
+  } */
+.footer-image img {
+    width: 150%;
+    height: 200px;
+  }
+.river-prairie {
+    display: none;
+  }
+.footer-links {
+    display: block;
+    width: 34%;
+    font-size: 10px;
+}
+
+.footer-links ul {
+  margin-left: 0;
+  font-size: 9px;
+}
+.footer-anchor:nth-of-type(1) {
+   word-break: break-word;
+}
+
+@media screen and (max-width: 425px) {
+
+  .container {
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+  .prairie-picture {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .prairie-picture img {
+    width: 80%;
+  }
+  .menu p {
+    font-size: 12px;
+  }
+  .nav-bar-hover a {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  .name-title h1 {
+    font-size: 34px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .name-title h2 {
+    font-size: 16px;
+  }
+  .section-titles {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .red-text {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 27px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .job-experience {
+    margin-bottom: 10px;
+  }
+  .skill-meter p {
+    font-size: 12px;
+    /* margin: 5px, 5px, 5px, 5px; */
+  }
+  .company h3 {
+  font-size: 16px;
+  }
+  .footer-name h1 {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+  .footer-name h4 {
+    font-size: 16px;
+  }
+  .footer-anchor a {
+  font-size: 11px;
+  }
+}
